@@ -1,0 +1,115 @@
+@import "color.css";
+
+.header {
+  width: 100%;
+  height: 600px;
+  background: rgb(137, 137, 153);
+  background: linear-gradient(
+    180deg,
+    rgba(137, 137, 153, 1) 0%,
+    rgba(117, 117, 150, 1) 35%,
+    #252627e7 80%,
+    #252627 100%
+  );
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.header .cover {
+  width: 70%;
+  height: 400px;
+  position: relative;
+}
+
+.header .cover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header .avatar {
+  z-index: 2;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100rem;
+  overflow: hidden;
+  margin-top: -130px;
+  box-shadow: 0 0 0 3px black, 0 0 0 7px var(--primary-color), 0 0 0 11px black;
+}
+
+.header .avatar img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2);
+  object-fit: cover;
+  object-position: top;
+}
+
+.header .name h3 {
+  font-size: 35px;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.header .desc span {
+  font-size: 17px;
+  color: var(--secondary-text-color);
+}
+
+.header .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65%;
+  height: 50px;
+  margin-top: 30px;
+  border-top: 1px solid #fff;
+}
+
+.header .menu li {
+  padding: 15px;
+  margin: 0 5px;
+  border-radius: 8px;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.header .menu li:hover {
+  background-color: var(--bg_icon_color);
+}
+
+.header .menu .more_btn{
+  position: relative;
+  z-index: 2;
+}
+
+.header .menu .more_btn ul{
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  width: 300px;
+  height: fit-content;
+  z-index: 1;
+  background-color: var(--bg-primary-color);
+  display: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 1px #999, 
+  inset 1px 1px 1px #999;
+}
+.header .menu .more_btn ul li{
+  color: var(--primary-text-color);
+}
+.header .menu .more_btn ul.active{
+  display: block;
+}
+.header .menu .more_btn ul.active_bot{
+  top: 55px;
+}
+
+
