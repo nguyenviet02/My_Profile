@@ -1,0 +1,198 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+
+.intro {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.profile_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  transform: translateY(-10%);
+}
+
+.profile_container .menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 400px;
+  height: 300px;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: transparent;
+}
+
+.profile_container .menu li {
+  list-style-type: none;
+  position: absolute;
+  font-size: 30px;
+  transform-origin: 200px;
+  transition: 0.5s;
+  left: 0;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(150px);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: inset 7px 7px 7px rgba(0, 0, 0, 0.05),
+    7px 10px 7px rgba(0, 0, 0, 0.05), 7px 8px 8px rgba(0, 0, 0, 0.05),
+    inset -6px -2px 5px rgba(0, 0, 0, 0.2);
+  color: #13d2b8;
+}
+
+.profile_container .menu li a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(calc(225deg / -5 * var(--i)));
+}
+
+.profile_container .profile_card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  z-index: 10000;
+  position: relative;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.profile_container .profile_card .profile_avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100rem;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.profile_container .profile_card p {
+  font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+  padding: 0px 20px;
+  margin-left: -20px;
+  text-shadow: none;
+}
+
+.profile_container .profile_card .name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile_container .profile_card .job {
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.profile_container.active .profile_card {
+  width: 500px;
+  height: 310px;
+  background-color: #fff;
+}
+
+.profile_container.active .profile_card .profile_avatar {
+  margin-top: -20%;
+}
+.profile_container.active .profile_card .button-effect {
+  opacity: 1;
+  pointer-events:all;
+}
+.profile_container.active .profile_card p {
+  opacity: 1;
+  margin-left: 0;
+}
+
+.menu li:hover ion-icon,.menu li:hover i{
+  transform: scale(1.2);
+  color: #4c13f8;
+}
+
+.menu.active li {
+  transform: rotate(calc(225deg / 5 * var(--i)));
+}
+
+/* You can remove these code below*/
+:root {
+  --primary: #08aeea;
+  --secondary: #13d2b8;
+  --purple: #bd93f9;
+  --pink: #ff6bcb;
+  --blue: #8be9fd;
+  --gray: #333;
+  --font: "Poppins", sans-serif;
+  --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+  --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+* {
+  box-sizing: border-box;
+}
+input,
+button,
+textarea {
+  border: 0;
+  outline: none;
+}
+
+/* Main code */
+.button-effect {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1rem 2rem;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  transition:0.5s;
+  color: white;
+  background-color: white;
+  background-color: var(--primary);
+  text-transform: uppercase;
+  transition: padding 0.25s linear;
+  text-align: center;
+  position: relative;
+}
+.button-effect:hover {
+  padding-right: 5rem;
+}
+.button-effect i {
+  transition: 0.25s ease;
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+}
+.button-effect:hover i {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.hide {
+  display: none;
+}
