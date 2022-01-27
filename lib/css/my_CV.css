@@ -1,7 +1,7 @@
 @import "color.css";
 
 body {
-  min-height: 100vh;
+  min-height: 100vh !important;
   max-width: 100vw !important;
   background-color: #18191A !important;
   overflow-y: auto;
@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .cv-container {
@@ -29,7 +29,9 @@ a {
 .cv {
   height: 100%;
   width: 100%;
+  display: block;
 }
+
 .home, .top {
   cursor: pointer;
 }
