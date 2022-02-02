@@ -14,7 +14,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .header .cover {
@@ -72,7 +71,7 @@
 }
 
 .header .menu li {
-  padding: 15px;
+  padding: 10px 15px 15px 15px;
   margin: 0 5px;
   border-radius: 8px;
   color: var(--secondary-text-color);
@@ -112,4 +111,7 @@
   top: 55px;
 }
 
+.header .menu .fa-times {
+  display: none;
+}
 

@@ -5,10 +5,13 @@
   width: 100%;
   background-color: #242526;
   position: fixed;
-  z-index: 3;
+  z-index: 100;
   display: flex;
   align-items: center;
   padding: 3px;
+  margin-bottom: 50px;
+  top: 0;
+  left: 0;
 }
 
 .cv .nav .icon {
@@ -114,4 +117,8 @@
 }
 .cv .nav .sub_menu a i {
   margin-top: 8px;
+}
+
+.cv .nav .menu_toggle{
+  display: none;
 }

@@ -63,6 +63,7 @@ body {
   align-items: center;
   transform: rotate(calc(225deg / -5 * var(--i)));
   text-decoration: none;
+  color: rgb(76, 0, 255);
 }
 
 /* Main card */
@@ -171,7 +172,7 @@ body {
 .menu li:hover ion-icon,
 .menu li:hover i {
   transform: scale(1.2);
-  color: #4c13f8;
+  color: #f81339;
 }
 
 .menu.active li {

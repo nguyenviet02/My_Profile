@@ -75,7 +75,7 @@
 }
 
 /* Animation */
-.cv-container::before, .cv-container::after {
+/* .cv-container::before, .cv-container::after {
   content: "";
   background-color: black;
   position: absolute;
@@ -108,4 +108,4 @@
   to {
     width: 0px;
   }
-}
+} */
