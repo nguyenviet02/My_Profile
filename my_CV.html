@@ -22,7 +22,9 @@
 <link rel="stylesheet" href="./lib/css/my_CV-nav.css">
 <link rel="stylesheet" href="./lib/css/my_CV-header.css">
 <link rel="stylesheet" href="./lib/css/my_CV-main.css">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="./lib/css/responsive_my_CV.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <link rel="stylesheet" href="./lib/fa/css/all.min.css">
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -33,7 +35,7 @@
 <body>
   <div class="cv-container">
     <!-- LOADER START-->
-    <div class="load">
+    <div class="load hide">
       <span class="loader"></span>
     </div>
     <!-- LOADER END -->
@@ -48,7 +50,7 @@
         <img src="./image/background.png" alt="">
       </div>
     </div> -->
-    
+
     <!-- CV START -->
     <div class="cv">
       <!-- NAVIGATION START -->
@@ -89,19 +91,16 @@
           <a href="#"><i class="fas fa-bell"></i></a>
           <a href="#"><i class="fas fa-caret-down"></i></a>
         </div>
+        <div class="menu_toggle">☰</div>
       </div>
       <!-- NAVIGATION END -->
       <!-- HEADER START -->
       <div class="header">
         <div class="cover">
-          <img
-            src="./image/background.png"
-            alt="background image">
+          <img src="./image/background.png" alt="background image">
         </div>
         <div class="avatar">
-          <img
-            src="./image/avatar.JPG"
-            alt="avatar image">
+          <img src="./image/avatar.JPG" alt="avatar image">
         </div>
         <div class="name">
           <h3>Nguyễn Viết</h3>
@@ -110,6 +109,7 @@
           <span>Front-end Developer</span>
         </div>
         <div class="menu">
+          <i class="fas fa-times"></i>
           <li>
             <span class="home">Home</span>
           </li>
@@ -129,15 +129,15 @@
             <span class="p_skill_btn">Personal Skill</span>
           </li>
           <li class="more_btn">
-              <span>More</span>
-              <i class="fas fa-caret-down"></i>
-              <ul>
-                <li class="contact_btn">Contact</li>
-                <li class="education_btn">Education</li>
-                <li class="language_btn">Language</li>
-                <li class="certificate_btn">Certificate</li>
-                <li class="hobby_btn">Hobby</li>
-              </ul>
+            <span>More</span>
+            <i class="fas fa-caret-down"></i>
+            <ul>
+              <li class="contact_btn">Contact</li>
+              <li class="education_btn">Education</li>
+              <li class="language_btn">Language</li>
+              <li class="certificate_btn">Certificate</li>
+              <li class="hobby_btn">Hobby</li>
+            </ul>
           </li>
         </div>
       </div>
@@ -148,50 +148,94 @@
           <h3 class="tag introduce">Introduction</h3>
           <hr>
           <h3 class="title">CONTACT</h3>
-          <div class="contact">
-            <div class="tag_name">
-              <p>Full Name: </p>
-              <p>Date of Birth: </p>
-              <p>Gender: </p>
-              <p>Phone No: </p>
-              <p>Email: </p>
-              <p>Address: </p>
-            </div>
-            <div class="info">
-              <p>NGUYỄN XUÂN VIẾT</p>
-              <p>17/12/2002</p>
-              <p>Male</p>
-              <p>0946141202</p>
-              <p>vietviet2002@gmail.com</p>
-              <p>Gia Loc, Hai Duong</p>
-            </div>
+          <div class="contact intro_block">
+            <p>
+              <span class="tag_name">
+                Fullname:
+              </span>
+              <span class="info">
+                NGUYỄN XUÂN VIẾT
+              </span>
+            </p>
+            <p>
+              <span class="tag_name">
+                Date of Birth:
+              </span>
+              <span class="info">
+                17/12/2002
+              </span>
+            </p>
+            <p>
+              <span class="tag_name">
+                Gender:
+              </span>
+              <span class="info">
+                Male
+              </span>
+            </p>
+            <p>
+              <span class="tag_name">
+                Phone No:
+              </span>
+              <span class="info">
+                0946141202
+              </span>
+            </p>
+            <p>
+              <span class="tag_name">
+                Email:
+              </span>
+              <span class="info">
+                vietviet2002@gmail.com
+              </span>
+            </p>
+            <p>
+              <span class="tag_name">
+                Address:
+              </span>
+              <span class="info">
+                Gia Loc, Hai Duong
+              </span>
+            </p>
           </div>
           <h3 class="title">EDUCATION</h3>
-          <div class="education">
+          <div class="education intro_block">
             <div class="tag_name">
-              <p>University: </p>
-              <p>Faculty: </p>
-            </div>
-            <div class="info">
-              <p>ACADEMY OF CRYPTOGRAPHY TECHNIQUES</p>
-              <p>ELECTRONICS AND TELECOMMUNICATION ENGINEERING</p>
+              <p>
+                <span class="tag_name">
+                  University:
+                </span>
+                <span class="info">
+                  ACADEMY OF CRYPTOGRAPHY TECHNIQUES
+                </span>
+              </p>
+              <p>
+                <span class="tag_name">
+                  Faculty:
+                </span>
+                <span class="info">
+                  ELECTRONICS AND TELECOMMUNICATION ENGINEERING
+                </span>
+              </p>
             </div>
           </div>
           <h3 class="title">LANGUAGE</h3>
-          <div class="language">
-            <div class="tag_name">
-              <p>English: </p>
-            </div>
-            <div class="info">
-              <p>TOEIC 700</p>
-            </div>
+          <div class="language intro_block">
+            <p>
+              <span class="tag_name">
+                TOEIC:
+              </span>
+              <span class="info">
+                700
+              </span>
+            </p>
           </div>
           <h3 class="title">CERTIFICATE</h3>
-          <div class="certificate">
+          <div class="certificate intro_block">
             <p>Python Basic Certificate on HackerRank</p>
           </div>
           <h3 class="title">HOBBY</h3>
-          <div class="hobby">
+          <div class="hobby intro_block">
             <p>Reading Technologies blog, study and research new technologies.</p>
             <p>Play soccer twice a week.</p>
           </div>
@@ -250,9 +294,7 @@
               </div>
             </div>
             <div class="post_image">
-              <img
-                src="./image/summary.jpg"
-                alt="summary image">
+              <img src="./image/summary.jpg" alt="summary image">
             </div>
             <div class="post_react">
               <div class="react">
@@ -321,9 +363,7 @@
               </div>
             </div>
             <div class="post_image">
-              <img
-                src="./image/objective.png"
-                alt="objective image">
+              <img src="./image/objective.png" alt="objective image">
             </div>
             <div class="post_react">
               <div class="react">
