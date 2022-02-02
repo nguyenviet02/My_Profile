@@ -75,11 +75,11 @@
 }
 
 /* Animation */
-/* .cv-container::before, .cv-container::after {
+.cv-container::before, .cv-container::after {
   content: "";
   background-color: black;
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   height: 100%;
   width: 50%;
   animation: opening 3s linear;
@@ -100,7 +100,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 1000;
+  z-index: 10000;
   pointer-events: none;
 }
 
@@ -108,4 +108,4 @@
   to {
     width: 0px;
   }
-} */
+}
