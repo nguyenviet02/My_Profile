@@ -1,6 +1,6 @@
 @import "color.css";
 
-.cv .nav {
+.nav {
   height: 50px;
   width: 100%;
   background-color: #242526;
@@ -9,19 +9,19 @@
   display: flex;
   align-items: center;
   padding: 3px;
-  margin-bottom: 50px;
   top: 0;
   left: 0;
+  margin-bottom: 50px;
 }
 
-.cv .nav .icon {
+.nav .icon {
   width: 40px;
   height: 40px;
   border-radius: 100rem;
   margin-left: 16px;
 }
 
-.cv .nav .search {
+.nav .search {
   width: 250px;
   height: 40px;
   background-color: #38393a;
@@ -36,7 +36,7 @@
   color: var(--secondary-text-color);
 }
 
-.cv .nav .search .search_inp {
+.nav .search .search_inp {
   border: none;
   outline: none;
   width: 100%;
@@ -46,7 +46,7 @@
   font-size: 15px;
 }
 
-.cv .nav .nav_menu {
+.nav .nav_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +54,7 @@
   height: 40px;
   margin: 0px 170px;
 }
-.cv .nav .nav_menu li {
+.nav .nav_menu li {
   list-style: none;
   font-size: 22px;
   color: var(--secondary-text-color);
@@ -66,14 +66,14 @@
   justify-content: center;
   align-items: center;
 }
-.cv .nav .nav_menu li a {
+.nav .nav_menu li a {
   color: inherit;
 }
-.cv .nav .nav_menu li:hover {
+.nav .nav_menu li:hover {
   background-color: var(--bg_icon_color);
 }
 
-.cv .nav .info {
+.nav .info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@
   border-radius: 20px;
 }
 
-.cv .nav .info img {
+.nav .info img {
   width: 30px;
   height: 30px;
   object-fit: cover;
@@ -92,13 +92,13 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-.cv .nav .info .name {
+.nav .info .name {
   font-size: 17px;
   font-weight: bold;
   color: var(--third-text-color);
 }
 
-.cv .nav .sub_menu {
+.nav .sub_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +106,7 @@
   margin-left: 10px;
 }
 
-.cv .nav .sub_menu a {
+.nav .sub_menu a {
   text-align: center;
   color: var(--secondary-text-color);
   font-size: 22px;
@@ -115,10 +115,10 @@
   height: 40px;
   width: 40px;
 }
-.cv .nav .sub_menu a i {
+.nav .sub_menu a i {
   margin-top: 8px;
 }
 
-.cv .nav .menu_toggle{
+.nav .menu_toggle{
   display: none;
 }

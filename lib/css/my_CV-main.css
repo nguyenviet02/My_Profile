@@ -46,6 +46,7 @@
 }
 .cv_main .cv_main-left .intro_block {
   border-bottom: 2px dashed white;
+  padding-bottom: 10px;
 }
 
 .cv_main .cv_main-left .contact p {
@@ -74,6 +75,7 @@
   overflow: hidden;
   padding-bottom: 15px;
   margin-bottom: 20px;
+  scroll-margin-top: 50px;
 }
 
 .cv_main .cv_main-right .post .post_header,
