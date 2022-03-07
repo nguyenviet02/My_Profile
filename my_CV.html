@@ -16,8 +16,8 @@
 <meta property="og:site_name" content="">
 <meta property="og:image" content="">
 <link rel="stylesheet" href="./lib/css/1.reset_css.css">
+<link rel="stylesheet" href="./lib/css/my_CV-intro.css">
 <link rel="stylesheet" href="./lib/css/my_CV.css">
-<link rel="stylesheet" href="./lib/css/my_CV-loader.css">
 <link rel="stylesheet" href="./lib/css/my_CV-show.css">
 <link rel="stylesheet" href="./lib/css/my_CV-nav.css">
 <link rel="stylesheet" href="./lib/css/my_CV-header.css">
@@ -33,66 +33,50 @@
 
 <body>
   <div class="cv-container">
-          <!-- NAVIGATION START -->
-          <div class="nav">
-            <!-- Icon -->
-            <a href="#"><img src="./image/git.png" alt="" class="icon top"></a>
-            <!-- Search bar -->
-            <div class="search">
-              <i class="fas fa-search"></i>
-              <input type="text" name="saerch" id="search_inp" class="search_inp" placeholder="Search something ...">
-            </div>
-            <!-- Menu -->
-            <div class="nav_menu">
-              <li class="nav_menu_item">
-                <a href="#"><i class="fas fa-home home"></i></a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="#"><i class="fas fa-video"></i></a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="#"><i class="fas fa-store"></i></a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="#"><i class="fas fa-users"></i></a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="#"><i class="fas fa-gamepad"></i></a>
-              </li>
-            </div>
-            <!-- Info -->
-            <div class="info top">
-              <img src="./image/avatar.JPG" alt="">
-              <span class="name">Viết</span>
-            </div>
-            <div class="sub_menu">
-              <a href="#"><i class="fas fa-dice-six"></i></a>
-              <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-              <a href="#"><i class="fas fa-bell"></i></a>
-              <a href="#"><i class="fas fa-caret-down"></i></a>
-            </div>
-            <div class="menu_toggle">☰</div>
-          </div>
-          <!-- NAVIGATION END -->
-    <!-- LOADER START-->
-    <div class="load">
-      <span class="loader"></span>
-    </div>
-    <!-- LOADER END -->
-
-    <!-- TODO:  Make show image -->
-    <!-- <div class="show"> 
-      <div class="show_menu">
-        <i class="fas fa-times"></i>
-        <img src="./image/git.png" alt="" class="avatar">
-      </div>
-      <div class="show_image">
-        <img src="./image/background.png" alt="">
-      </div>
-    </div> -->
 
     <!-- CV START -->
     <div class="cv">
+      <!-- NAVIGATION START -->
+      <div class="nav">
+        <!-- Icon -->
+        <a href="#"><img src="./image/git.png" alt="" class="icon top"></a>
+        <!-- Search bar -->
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" name="saerch" id="search_inp" class="search_inp" placeholder="Search something ...">
+        </div>
+        <!-- Menu -->
+        <div class="nav_menu">
+          <li class="nav_menu_item">
+            <a href="#"><i class="fas fa-home home"></i></a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#"><i class="fas fa-video"></i></a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#"><i class="fas fa-store"></i></a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#"><i class="fas fa-users"></i></a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#"><i class="fas fa-gamepad"></i></a>
+          </li>
+        </div>
+        <!-- Info -->
+        <div class="info top">
+          <img src="./image/avatar.JPG" alt="">
+          <span class="name">Viết</span>
+        </div>
+        <div class="sub_menu">
+          <a href="#"><i class="fas fa-dice-six"></i></a>
+          <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="#"><i class="fas fa-bell"></i></a>
+          <a href="#"><i class="fas fa-caret-down"></i></a>
+        </div>
+        <div class="menu_toggle">☰</div>
+      </div>
+
       <!-- HEADER START -->
       <div class="header">
         <div class="cover">
@@ -140,13 +124,13 @@
           </li>
         </div>
       </div>
-      <!-- HEADER END -->
+
       <!-- MAIN CONTENT START -->
       <div class="cv_main">
         <div class="cv_main-left">
           <h3 class="tag introduce">Introduction</h3>
           <hr>
-          
+
           <div class="contact intro_block">
             <h3 class="title">CONTACT</h3>
             <p>
@@ -549,13 +533,30 @@
           </div>
         </div>
       </div>
-      <!-- MAIN CONTENT END -->
+
       <button class="btn_to_top top hide">
         <i class="fas fa-caret-up"></i>
       </button>
     </div>
-    <!-- CV END -->
+
+    <!-- INTRO -->
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text" style="--i: 1">Hello!!!</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text" style="--i: 2">Welcome to</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text" style="--i: 3">My Profile Website</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+    
   </div>
+
 </body>
 
 </html>

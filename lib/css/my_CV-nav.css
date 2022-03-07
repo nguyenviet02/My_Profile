@@ -3,6 +3,7 @@
 .nav {
   height: 50px;
   width: 100%;
+  overflow: hidden;
   background-color: #242526;
   position: fixed;
   z-index: 100;
@@ -119,6 +120,6 @@
   margin-top: 8px;
 }
 
-.nav .menu_toggle{
+.nav .menu_toggle {
   display: none;
 }

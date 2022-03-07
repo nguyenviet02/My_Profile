@@ -2,7 +2,9 @@
 
 .header {
   width: 100%;
+  max-width: 100vw;
   height: 600px;
+  overflow: hidden;
   background: rgb(137, 137, 153);
   background: linear-gradient(
     180deg,
@@ -83,12 +85,12 @@
   background-color: var(--bg_icon_color);
 }
 
-.header .menu .more_btn{
+.header .menu .more_btn {
   position: relative;
   z-index: 2;
 }
 
-.header .menu .more_btn ul{
+.header .menu .more_btn ul {
   position: absolute;
   bottom: 55px;
   left: 0;
@@ -99,20 +101,18 @@
   display: none;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: inset -1px -1px 1px #999, 
-  inset 1px 1px 1px #999;
+  box-shadow: inset -1px -1px 1px #999, inset 1px 1px 1px #999;
 }
-.header .menu .more_btn ul li{
+.header .menu .more_btn ul li {
   color: var(--primary-text-color);
 }
-.header .menu .more_btn ul.active{
+.header .menu .more_btn ul.active {
   display: block;
 }
-.header .menu .more_btn ul.active_bot{
+.header .menu .more_btn ul.active_bot {
   top: 55px;
 }
 
 .header .menu .fa-times {
   display: none;
 }
-

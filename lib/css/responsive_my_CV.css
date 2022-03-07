@@ -110,4 +110,8 @@
   .info {
     text-align: center;
   }
+
+  .intro-text {
+    font-size: 40px;
+  }
 }
