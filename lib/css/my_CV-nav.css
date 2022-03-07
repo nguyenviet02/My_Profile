@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   margin-bottom: 50px;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .nav .icon {
@@ -55,7 +56,7 @@
   height: 40px;
   margin: 0px 170px;
 }
-.nav .nav_menu li {
+.nav .nav_menu .nav_menu_item {
   list-style: none;
   font-size: 22px;
   color: var(--secondary-text-color);
