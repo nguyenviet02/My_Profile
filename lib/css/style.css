@@ -4,8 +4,10 @@ body {
   align-items: center;
   max-height: 100vh;
   max-width: 100vw;
+  overflow: hidden;
   background: linear-gradient(45deg, #8460ed, #ff1252) no-repeat;
 }
+
 /* Intro */
 .intro {
   text-align: center;
@@ -63,7 +65,32 @@ body {
   align-items: center;
   transform: rotate(calc(225deg / -5 * var(--i)));
   text-decoration: none;
-  color: rgb(76, 0, 255);
+}
+.profile_container .menu li .fa-facebook {
+  color: #1877f2;
+}
+
+.profile_container .menu li .fa-instagram {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.profile_container .menu li .fa-github {
+  color: #333;
+}
+.profile_container .menu li .fa-telegram {
+  color: #0088cc;
+}
+.profile_container .menu li .fa-discord {
+  color: #5774e0;
 }
 
 /* Main card */
@@ -169,10 +196,8 @@ body {
   margin-left: 0;
 }
 
-.menu li:hover ion-icon,
 .menu li:hover i {
   transform: scale(1.2);
-  color: #f81339;
 }
 
 .menu.active li {

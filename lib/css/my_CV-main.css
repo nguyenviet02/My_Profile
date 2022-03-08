@@ -12,7 +12,7 @@
   width: 40%;
   background-color: var(--bg-primary-color);
   border-radius: 10px;
-  height: fit-content;
+  max-height: 1000px;
   padding: 20px;
   color: var(--primary-text-color);
   line-height: 30px;

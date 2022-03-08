@@ -85,6 +85,15 @@
     visibility: visible;
     transform: translateX(0);
   }
+  .header .menu .more_btn ul {
+    width: 200px;
+    left: -100%;
+  }
+  .header .menu .more_btn ul.active_bot {
+    top: unset;
+    bottom: 55px;
+    left: -100%;
+  }
   /* Responsive cv_main */
 
   .cv_main {

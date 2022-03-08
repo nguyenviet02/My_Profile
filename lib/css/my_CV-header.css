@@ -82,6 +82,7 @@
 }
 .header .menu li:hover {
   background-color: var(--bg_icon_color);
+  color: #fff;
 }
 
 .header .menu .more_btn {
