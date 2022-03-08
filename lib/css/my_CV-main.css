@@ -37,10 +37,10 @@
   text-decoration: underline;
 }
 .cv_main .cv_main-left .contact {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: 16px;
   padding: 10px;
 }
@@ -237,68 +237,58 @@
 .cv_main .cv_main-right .skills .post_main .percent {
   width: 100%;
 }
-.cv_main .cv_main-right .skills .post_main .id1 {
-  width: 100%;
+
+.cv_main .cv_main-right .skills .post_main .percent div {
+  color: white;
+  padding-left: 10px;
+}
+
+.cv_main .cv_main-right .skills .post_main .skill_ele {
   margin-bottom: 10px;
   padding: 5px 0px;
+}
+
+.cv_main .cv_main-right .skills .post_main .id1 {
+  width: 100%;
 }
 
 .cv_main .cv_main-right .skills .post_main .percent .id1 {
   background-color: #b62b42;
-  color: white;
-  padding-left: 10px;
 }
 .cv_main .cv_main-right .skills .post_main .id2 {
   width: 80%;
-  margin-bottom: 10px;
-  padding: 5px 0px;
 }
 
 .cv_main .cv_main-right .skills .post_main .percent .id2 {
   background-color: #2cb683;
-  color: white;
-  padding-left: 10px;
 }
 .cv_main .cv_main-right .skills .post_main .id3 {
   width: 60%;
-  margin-bottom: 10px;
-  padding: 5px 0px;
 }
 
 .cv_main .cv_main-right .skills .post_main .percent .id3 {
   background-color: #2cb683;
-  color: white;
-  padding-left: 10px;
 }
 .cv_main .cv_main-right .skills .post_main .id4 {
   width: 60%;
-  margin-bottom: 10px;
-  padding: 5px 0px;
 }
 
 .cv_main .cv_main-right .skills .post_main .percent .id4 {
   background-color: #b62b42;
-  color: white;
-  padding-left: 10px;
 }
 .cv_main .cv_main-right .skills .post_main .id5 {
   width: 50%;
-  margin-bottom: 10px;
-  padding: 5px 0px;
 }
 
 .cv_main .cv_main-right .skills .post_main .percent .id5 {
   background-color: #b72b8e;
-  color: white;
-  padding-left: 10px;
 }
 .cv_main .cv_main-right .personal_skill .post_main li {
   list-style-type: circle;
   width: fit-content;
-  background-color: #ECECF5;
+  background-color: #ececf5;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.623);
   padding: 5px 15px;
   border-radius: 5px;
 }
-

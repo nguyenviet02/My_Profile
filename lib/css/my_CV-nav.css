@@ -9,6 +9,7 @@
   z-index: 100;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 3px;
   top: 0;
   left: 0;
@@ -20,7 +21,6 @@
   width: 40px;
   height: 40px;
   border-radius: 100rem;
-  margin-left: 16px;
 }
 
 .nav .search {
