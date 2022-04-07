@@ -286,9 +286,9 @@
 .cv_main .cv_main-right .personal_skill .post_main li {
   list-style-type: circle;
   width: fit-content;
-  background-color: #ececf5;
+  background-color: #ffffff;
   margin-bottom: 10px;
-  color: rgba(0, 0, 0, 0.623);
+  color: rgba(0, 0, 0, 0.8);
   padding: 5px 15px;
   border-radius: 5px;
 }
